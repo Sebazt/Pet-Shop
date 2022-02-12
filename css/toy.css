@@ -5,6 +5,7 @@
     font-family: 'EB Garamond', serif;
 }
 
+
 body{
     display: flex;
     flex-direction: column;
@@ -14,10 +15,12 @@ body{
 }
 
 
-/* -------------------header----------------- */
+/*  Header */
+
+
 header{
     height: 90vh;
-    background-image: url(../assets/pet18.jpeg);
+    background-image: url(../assets/3.jpg);
     display: flex;
     background-repeat: no-repeat;
     background-size: 87.5rem 37.5rem;    
@@ -25,15 +28,17 @@ header{
     justify-content: flex-end;
 }
 
-
+.navbarCol:hover{
+    background-color: rgba(0, 0, 0, 0.144) !important;
+    border: 2rem;
+}
 
 h1{
-    width: 30%;
     align-self: center;
-    margin: 0 4rem;
     font-weight: bold;
     font-size: 3em;
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 .bg-dark{
@@ -70,37 +75,97 @@ h1{
 }
 
 
-
-
 /* -----------------main-------------- */
 
 main{
+    
+    width: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-   /*  background-color: seagreen; */
-    min-height: 60vh;
-}
-
-.text-contenedor{
-   /*  background-color: sandybrown; */
+    align-items: center;
+    overflow: hidden;
     padding: 1rem;
-    margin: 1rem 7rem;
+}
+
+.texto{
+    margin: 4rem;
+    font-size: 2em;
+    text-align: center;
+    font-weight: 600;
+}
+
+.contenedor{
+    width: 100%;
+    max-width: 1200px;
+    min-height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.card{
+    width: 330px;
+    height: 430px;
+    border-radius: 1rem;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    margin: 20px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.25s;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.37);
+} 
+
+.card img{
+    
+    width: 330px;
+    height: 220px;
+    margin-bottom: 1rem;
+}
+
+.card h3{
+    font-size: 3em;
+    font-weight: 600;
+    text-align: center;
+    color: steelblue;
+}
+
+.boton-carro{
     font-size: 1.5em;
-    text-align: justify;
-    border: none;
+    padding: .5rem;
+    text-decoration: none;
+    color: #000;
+    background-color: slateblue;
+    border-radius: 1rem;
 }
 
-.text-contenedor>div>h5{
-    font-weight: bold;
-    font-size: 1.5em !important;
+.boton-carro:hover{
+    background-color: transparent;
+    color: #000;
+}
+
+.boton-carro:active{
+    cursor: wait;
+}
+
+.precio{
+    font-size: 1.5em;
+    align-self: flex-end;
+    margin: 1rem 3rem 1rem 0;
 }
 
 
 
-/* -----------------footer------------- */
 
 
-
+/* -----------------footer-------------- */
 
 footer{
     min-height: 10vh;
@@ -136,18 +201,4 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-
-
-
-
-
-
-
-
-@media (max-width: 680px){
-    header{
-        background-size: cover;
-    }
 }
