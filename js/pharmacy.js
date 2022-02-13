@@ -42,5 +42,5 @@ function showProduct(arrayJuguetes) {
             ` 
             console.log(product)
        })
-   document.querySelector(".productos").innerHTML = product
+   document.querySelector(".contenedor").innerHTML = product
 }
