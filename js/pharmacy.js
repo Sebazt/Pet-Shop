@@ -1,46 +1,39 @@
+var productosFarmacia = [];
+var articulos = [];
 
-let arrayArticulos = []
-let arrayJuguetes = []
-async function getDatos() {
-    await fetch("https://apipetshop.herokuapp.com/api/articulos")
-    .then((response) => response.json())
-    .then((dato) => {
-        arrayArticulos.push(...dato.response)
-        arrayJuguetes = arrayArticulos.filter( juguete => juguete.tipo === "Medicamento" )
-       console.log(arrayArticulos)
-       console.log(arrayJuguetes)
-       showProduct(arrayJuguetes)
-      
-})
+async function getDatos(){
+  await fetch("https://apipetshop.herokuapp.com/api/articulos")
+  .then((response) => response.json())
+  .then((datos =>{
+    articulos.push(...datos.response);
+    productosFarmacia = articulos.filter( farmacia => farmacia.tipo == "Medicamento")
+    console.log(articulos)
+    console.log(productosFarmacia)
+    mostrarFarmacia(productosFarmacia)
+  }))
 }
 getDatos()
-function showProduct(arrayJuguetes) {
-    let product = ""
-    let arrayJuguetesShow = []
-    arrayJuguetesShow.push(...arrayJuguetes)
-    console.log(arrayJuguetesShow)
 
-    arrayJuguetesShow.map((producto) => {
+function mostrarFarmacia(productosFarmacia){
+  let product = ""
+  let arregloFarmacia = []
+  arregloFarmacia.push(...productosFarmacia)
+  console.log(arregloFarmacia);
+  
+  arregloFarmacia.map((producto) =>{
+        product +=
 
-            product += `
-            <div class="  col">
-            <div class="card shadow-sm">
-            <h5 class="card-title">${producto.nombre} </h5>
-            <img src="${producto.imagen}"> </img>
-              <div class="card-body">
-                <p class="card-text">${producto.descripcion}</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-lg btn-outline-secondary">Agregar al carrito</button>
-                    
-                  </div>
-                  <small class="text-muted">Stock: ${producto.stock} </small>
-                </div>
-              </div>
-            </div>
-            </div>
-            ` 
-            console.log(product)
-       })
-   document.querySelector(".contenedor").innerHTML = product
+    `
+        <div class="card">
+          <img src="${producto.imagen}" alt="">
+          <h3>${producto.nombre}</h3>
+          <span class="ultimos-items"></span>
+    
+          <p class="precio">${producto.precio + "$"}</p>
+          <b><a href="#" class="boton-carro">Añadir al carrito</a></b>
+        </div> 
+        `
+  })
+
+  document.querySelector(".contenedor").innerHTML = product
 }

@@ -28,7 +28,7 @@ function mostrarProducto(juguetes){
           <h3>${producto.nombre}</h3>
           <span class="ultimos-items"></span>
     
-          <p class="precio">${producto.precio}</p>
+          <p class="precio">${producto.precio + "$"}</p>
           <b><a href="#" class="boton-carro">Añadir al carrito</a></b>
         </div> 
         `
