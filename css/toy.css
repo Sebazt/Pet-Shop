@@ -75,6 +75,7 @@ h1{
 }
 
 
+
 /* -----------------main-------------- */
 
 main{
@@ -107,7 +108,7 @@ main{
 
 .card{
     width: 330px;
-    height: 450px;
+    min-height: auto;
     border-radius: 1rem;
     box-shadow: 0 2px 2px rgba(0,0,0,0.2);
     margin: 20px;
@@ -162,7 +163,15 @@ main{
 }
 
 
-
+.ultimos-items{
+    background-color: #d62828;
+    color: #ffffff;
+    font-size: 1.2em;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    border-radius: .5rem;
+}
 
 
 /* -----------------footer-------------- */
