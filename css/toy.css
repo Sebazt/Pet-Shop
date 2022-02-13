@@ -36,7 +36,7 @@ header{
 h1{
     align-self: center;
     font-weight: bold;
-    font-size: 3em;
+    font-size: 1.5em;
     text-align: center;
     margin-bottom: 1rem;
 }
@@ -90,7 +90,7 @@ main{
 
 .texto{
     margin: 4rem;
-    font-size: 2em;
+    font-size: 1.8em;
     text-align: center;
     font-weight: 600;
 }
@@ -190,11 +190,11 @@ footer{
 }
 
 .mapa{
-    width: 150px;
+    width: 12rem;
     margin: .5rem;
-    height: 100px;
+    height: 7.2rem;
     cursor: pointer;
-    border-radius: 50%;
+    
 }
 
 .div-footer{

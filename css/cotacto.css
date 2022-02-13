@@ -1,0 +1,264 @@
+* :not(ul, ol, li, dl, dt, dd) {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'EB Garamond', serif;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+
+/*  Header */
+
+
+header{
+    height: 90vh;
+    background-image: url(../assets/cat2.jpeg);
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: 87.5rem 37.5rem;    
+    background-position: center;
+    justify-content: flex-end;
+}
+
+.navbarCol:hover{
+    background-color: rgba(0, 0, 0, 0.144) !important;
+    border: 2rem;
+}
+
+h1{
+    align-self: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.bg-dark{
+    background-color: #f4f3ee00 !important;
+}
+
+.navbarCol:hover{
+    background-color: rgba(0, 0, 0, 0.144) !important;
+    border: 2rem;
+}
+
+.logo-nav{
+    height: 15vh;
+}
+
+.anclors{
+    font-size: 1.2em;
+    color: rgb(2, 2, 2) !important;
+}
+
+.anclors:hover{
+    text-shadow: 1px 1px 10px #ffffff;
+}
+
+.btn-1{
+    border: 1px solid #000;
+    color: #000;
+}
+  
+.btn-1:hover{
+    border: 1px solid #000;
+    color: #000;
+    text-decoration: underline !important;
+}
+
+
+/* main */
+
+main{
+    display: flex;
+    flex-direction: column;
+   /*  background-color: seagreen; */
+    min-height: 100vh;
+}
+
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Poppins", sans-serif;
+    color: #000; }
+  
+  a {
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease; }
+    a, a:hover {
+      text-decoration: none !important; }
+  
+  .text-black {
+    color: #000; }
+  
+  .content {
+    padding: 7rem 0; 
+}
+  
+  h2 {
+    font-size: 3.5rem;
+    font-weight: 700; 
+} 
+  
+  h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff; }
+  
+  .form-control {
+    border: none;
+    border: 1px solid #ccc;
+    border-radius: 4px; }
+    .form-control:active, .form-control:focus {
+      outline: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      border-color: #000; }
+  
+  .col-form-label {
+    color: #000; }
+  
+  .btn, .form-control, .custom-select {
+    height: 50px; }
+  
+  .custom-select:active, .custom-select:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-color: #000; }
+  
+  .heading {
+    color: #888;
+    letter-spacing: .05rem;
+    text-transform: uppercase;
+    font-weight: 400; }
+  
+  .btn {
+    color: #fff;
+    border: none;
+    border-radius: 4px !important;
+    -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1) !important;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1) !important; }
+    .btn:hover {
+      color: #fff; }
+    .btn:active, .btn:focus {
+      outline: none;
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+  
+  .box {
+    padding: 40px;
+    background: #fff;
+    /* -webkit-box-shadow: -30px 30px 0px 0 rgba(0, 0, 0, 0.08);
+     box-shadow: -30px 30px 0px 0 rgba(0, 0, 0, 0.08);
+    } }  */
+}
+    .box h3 {
+      font-size: 14px;
+      margin-bottom: 30px;
+      text-align: center;
+     }
+  
+  label.error {
+    font-size: 12px;
+    color: red; }
+  
+  #message {
+    resize: vertical; }
+  
+  #form-message-warning, #form-message-success {
+    display: none; }
+  
+  #form-message-warning {
+    color: #B90B0B; }
+  
+  #form-message-success {
+    color: #55A44E;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center; }
+  
+  .submitting {
+    text-align: center;
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    display: none;
+    font-weight: bold;
+    font-size: 12px;
+    color: #000; }
+  
+
+
+#boton {
+    margin-top: 2em;
+}
+
+
+#img_contact {
+background-image: url(../assets/pet_contact2.jpeg);
+background-size: 45rem 28rem;
+background-position: right;
+background-repeat: no-repeat;
+
+
+}
+
+
+input {
+    width: 40vw;
+}
+
+#alto_boton {
+    margin-top: 3em;
+}
+
+
+
+
+
+/* -----------------footer-------------- */
+
+footer{
+    min-height: 10vh;
+}
+
+.footer-p{
+    font-size: 1.2em;
+    color: #000;
+}
+
+.btnRed:hover{
+    color: steelblue;
+}
+
+.email-a{
+    color: #000;
+    text-decoration: none;
+}
+
+.h6{
+    text-align: center;
+}
+
+.mapa{
+    width: 12rem;
+    margin: .5rem;
+    height: 7.2rem;
+    cursor: pointer;
+    
+}
+
+.div-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

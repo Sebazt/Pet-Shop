@@ -125,11 +125,11 @@ footer{
 }
 
 .mapa{
-    width: 150px;
+    width: 12rem;
     margin: .5rem;
-    height: 100px;
+    height: 7.2rem;
     cursor: pointer;
-    border-radius: 50%;
+    
 }
 
 .div-footer{
@@ -149,5 +149,9 @@ footer{
 @media (max-width: 680px){
     header{
         background-size: cover;
+    }
+
+    h1{
+        display: none;
     }
 }
