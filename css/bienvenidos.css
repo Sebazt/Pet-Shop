@@ -1,0 +1,54 @@
+.box_h1 {
+    /* width: 3vw; */
+    
+    margin-right: 4em;
+   
+}
+
+
+h1 {
+    font-size: 2.3rem;
+    letter-spacing: 3px;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif !important; */
+    color: black;
+    text-align: center;
+   align-self: center;
+    /* margin: 0 4rem; */
+    margin-top: 3em;
+    font-weight: bold;
+    margin-top: 6em;
+   
+    
+}
+
+
+.box_h1 {
+    width: 35vw;
+    margin-right: 4em;
+}
+
+
+.cssanimation lePeek sequence {
+    /* width: 100%; */
+    /* position: absolute; */
+    /* top: 50%;
+    left: 50%; */
+    transform: translateX(-50%) translateY(-50%);
+}
+
+
+
+.cssanimation, .cssanimation span {
+    animation-duration: 0.8s;
+    animation-fill-mode: both;
+}
+
+.cssanimation span { display: inline-block }
+
+.lePeek span { animation-name: lePeek }
+@keyframes lePeek {
+    25% {  transform: rotateX(30deg) translateY(10px) rotate(-13deg); }
+    50% { transform: translateY(-22px) rotate(3deg) scale(1.1);  }
+}
+
+

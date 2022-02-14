@@ -12,6 +12,7 @@ body{
     min-height: 100vh;
     width: 100%;
     scroll-behavior: smooth;
+    font-size: 0.8rem;
 
 }
 
@@ -21,10 +22,10 @@ body{
 
 header{
     height: 90vh;
-    background-image: url(../assets/4.jpg);
+    background-image: url(../assets/pets1.jpeg);
     display: flex;
     background-repeat: no-repeat;
-    background-size: 87.5rem 37.5rem;    
+    background-size:cover;    
     background-position: center;
     justify-content: flex-start;
 }
@@ -37,6 +38,21 @@ h1{
     text-align: center;
     margin-bottom: 1rem;
 }
+
+
+a {
+    color:black
+}
+
+
+ul > li {
+    font-size: 0.8rem;
+  }
+
+#search_b {
+    margin-right: 2em;
+}
+
 
 .bg-dark{
     background-color: #f4f3ee00 !important;
@@ -52,8 +68,9 @@ h1{
 }
 
 .anclors{
-    font-size: 1.5em;
-    color: rgb(255, 255, 255) !important;
+    font-size: 1.2em;
+    color: rgb(2, 2, 2) !important;
+    text-transform: uppercase;
 }
 
 .anclors:hover{
@@ -113,6 +130,7 @@ main{
     transition: all 0.25s;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .contenedor .card:hover{
@@ -122,16 +140,22 @@ main{
 
 .card img{
     
-    width: 330px;
-    height: 180px;
+    width: 15rem;
+   
     margin-bottom: 1rem;
+    align-items: center;
+}
+
+b {
+  margin-bottom: 1em;
 }
 
 .card h3{
-    font-size: 2em;
+    font-size: 1.3em;
+    text-transform: uppercase;
     font-weight: 600;
     text-align: center;
-    color: steelblue;
+    color: black;
 }
 
 .boton-carro{
@@ -139,12 +163,12 @@ main{
     padding: .5rem;
     text-decoration: none;
     color: #000;
-    background-color: slateblue;
+    background-color: #ffb703;
     border-radius: 1rem;
 }
 
 .boton-carro:hover{
-    background-color: transparent;
+    background-color: grey;
     color: #000;
 }
 
@@ -154,19 +178,572 @@ main{
 
 .precio{
     font-size: 1.5em;
-    align-self: flex-end;
-    margin: 1rem 3rem 1.5rem 0;
+    /* align-self: flex-end; */
+    /* margin: 1rem 3rem 1.5rem 0; */
+    margin: 1em;
 }
 
 .ultimos-items{
-    background-color: #d62828;
-    color: #ffffff;
+    /* background-color: #d62828; */
+    color: red;
+    text-transform: uppercase;
     font-size: 1.2em;
     width: 50%;
     text-align: center;
     margin: auto;
     border-radius: .5rem;
 }
+
+
+
+
+     /* --------camion same day delivery-------- */
+
+
+     #h4_camion {
+        font-size: 0.6rem;
+        padding-left: 1.2em;
+        color: white;
+      }
+      
+      .camion {
+        display: flex;
+        flex-direction: column;
+        width: 18vw;
+        height: 12vh;
+        background-color: rgba(0, 211, 0, 0.63);
+        margin-bottom: 1em;
+      }
+      
+      .loop-wrapper {
+        margin: 0 auto;
+        position: relative;
+        display: block;
+        width: 20vw;
+        height: 15vh;
+        overflow: hidden;
+        border-bottom: 3px solid #fff;
+        color: #fff;
+      }
+      .mountain {
+        position: absolute;
+        right: -900px;
+        bottom: -20px;
+        width: 2px;
+        height: 2px;
+        box-shadow: 
+          0 0 0 50px #4DB6AC,
+          60px 50px 0 70px #4DB6AC,
+          90px 90px 0 50px #4DB6AC,
+          250px 250px 0 50px #4DB6AC,
+          290px 320px 0 50px #4DB6AC,
+          320px 400px 0 50px #4DB6AC
+          ;
+        transform: rotate(130deg);
+        animation: mtn 20s linear infinite;
+      }
+      .hill {
+        position: absolute;
+        right: -900px;
+        bottom: -50px;
+        width: 400px;
+        border-radius: 50%;
+        height: 20px;
+        box-shadow: 
+          0 0 0 50px #4DB6AC,
+          -20px 0 0 20px #4DB6AC,
+          -90px 0 0 50px #4DB6AC,
+          250px 0 0 50px #4DB6AC,
+          290px 0 0 50px #4DB6AC,
+          620px 0 0 50px #4DB6AC;
+        animation: hill 4s 2s linear infinite;
+      }
+      .tree, .tree:nth-child(2), .tree:nth-child(3) {
+        position: absolute;
+        height: 100px; 
+        width: 35px;
+        bottom: 0;
+        background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/130015/tree.svg) no-repeat;
+      }
+      .rock {
+        margin-top: -17%;
+        height: 2%; 
+        width: 2%;
+        bottom: -2px;
+        border-radius: 20px;
+        position: absolute;
+        background: #ddd;
+      }
+      .truck, .wheels {
+        transition: all ease;
+        width: 85px;
+        margin-right: -60px;
+        bottom: 0px;
+        right: 50%;
+        position: absolute;
+        background: #eee;
+      }
+      .truck {
+        background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/130015/truck.svg) no-repeat;
+        background-size: contain;
+        height: 60px;
+      }
+      .truck:before {
+        content: " ";
+        position: absolute;
+        width: 25px;
+        box-shadow:
+          -30px 28px 0 1.5px #fff,
+           -35px 18px 0 1.5px #fff;
+      }
+      .wheels {
+        background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/130015/wheels.svg) no-repeat;
+        height: 15px;
+        margin-bottom: 0;
+      }
+      
+      .tree  { animation: tree 3s 0.000s linear infinite; }
+      .tree:nth-child(2)  { animation: tree2 2s 0.150s linear infinite; }
+      .tree:nth-child(3)  { animation: tree3 8s 0.050s linear infinite; }
+      .rock  { animation: rock 4s   -0.530s linear infinite; }
+      .truck  { animation: truck 4s   0.080s ease infinite; }
+      .wheels  { animation: truck 4s   0.001s ease infinite; }
+      .truck:before { animation: wind 1.5s   0.000s ease infinite; }
+      
+      
+      @keyframes tree {
+        0%   { transform: translate(1350px); }
+        50% {}
+        100% { transform: translate(-50px); }
+      }
+      @keyframes tree2 {
+        0%   { transform: translate(650px); }
+        50% {}
+        100% { transform: translate(-50px); }
+      }
+      @keyframes tree3 {
+        0%   { transform: translate(2750px); }
+        50% {}
+        100% { transform: translate(-50px); }
+      }
+      
+      @keyframes rock {
+        0%   { right: -200px; }
+        100% { right: 2000px; }
+      }
+      @keyframes truck {
+        0%   { }
+        6%   { transform: translateY(0px); }
+        7%   { transform: translateY(-6px); }
+        9%   { transform: translateY(0px); }
+        10%   { transform: translateY(-1px); }
+        11%   { transform: translateY(0px); }
+        100%   { }
+      }
+      @keyframes wind {
+        0%   {  }
+        50%   { transform: translateY(3px) }
+        100%   { }
+      }
+      @keyframes mtn {
+        100% {
+          transform: translateX(-2000px) rotate(130deg);
+        }
+      }
+      @keyframes hill {
+        100% {
+          transform: translateX(-2000px);
+        }
+      }
+      
+      
+      
+      h1 {
+      animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+      }
+      
+      
+      @keyframes tracking-in-expand {
+        0% {
+          letter-spacing: -0.5em;
+          opacity: 0;
+        }
+        40% {
+          opacity: 0.6;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+
+
+
+/* ----------perrito animado--------- */
+
+.perrito_animato {
+    width: 15vw;
+    margin-left: 4em;
+    
+    
+   }
+   
+   
+   
+   
+   .sausage-dog-animation {
+       height: 10rem;
+       max-height: 80vh;
+       max-width: 80vw;
+     }
+     
+     .ear,
+     .closed-eye,
+     .lean,
+     .front-legs,
+     .leg,
+     .head,
+     .tail,
+     .tail-blur,
+     .shadow {
+       animation-duration: 3s;
+       animation-iteration-count: infinite;
+       animation-timing-function: linear;
+     }
+     
+     .ball,
+     .ball-decoration,
+     .ball-sound {
+       animation-duration: 3s;
+       animation-iteration-count: infinite;
+       animation-timing-function: ease-in-out;
+     }
+     
+     .ball {
+       animation-name: squishBall;
+       transform: matrix(
+         1.0951654,
+         0.52195853,
+         -0.52866476,
+         1.2371611,
+         208.27138,
+         -632.28196
+       );
+     }
+     
+     @keyframes squishBall {
+       0%,
+       50%,
+       72%,
+       80%,
+       92%,
+       100% {
+         d: path(
+           "m 930.80242,477.19065 c -13.05851,3.00801 -24.77881,15.97694 -26.81485,30.67673 -2.03603,14.69979 5.61282,31.12503 15.54844,43.47271 9.93563,12.34768 22.15522,20.61485 36.12779,24.29677 13.97258,3.68192 29.69644,2.77869 42.91157,-2.81649 13.21513,-5.59518 23.92113,-15.88139 30.65943,-28.14324 6.7383,-12.26185 9.5079,-26.49697 5.7369,-38.5172 -3.771,-12.02022 -14.0825,-21.82316 -25.5603,-24.46605 -11.47786,-2.6429 -24.12011,1.87601 -37.63861,0.6591 -13.5185,-1.21691 -27.91187,-8.17033 -40.97037,-5.16233 z"
+         );
+         transform: matrix(
+           1.0951654,
+           0.52195853,
+           -0.52866476,
+           1.2371611,
+           208.27138,
+           -632.28196
+         );
+       }
+       65%,
+       85% {
+         d: path(
+           "m 932.4158,479.26229 c -14.67189,0.93637 -26.39219,13.9053 -28.42823,28.60509 -2.03603,14.69979 5.61282,31.12503 15.94228,38.97676 10.32947,7.85173 23.3365,7.12856 34.39281,10.90173 11.0563,3.77318 20.16082,12.04166 33.72906,12.76579 13.56828,0.72414 31.59878,-6.09489 42.72528,-18.16177 11.1265,-12.06689 15.3474,-29.37891 10.9229,-43.93943 -4.4245,-14.56052 -17.4943,-26.36654 -28.8312,-27.22343 -11.337,-0.85689 -20.93852,9.23684 -34.54977,8.73602 -13.61125,-0.50082 -31.23124,-11.59712 -45.90313,-10.66076 z"
+         );
+         transform: matrix(
+           1.0951654,
+           0.52195853,
+           -0.52866476,
+           1.2371611,
+           208.27138,
+           -642.28196
+         );
+       }
+     }
+     
+     .ball-decoration {
+       animation-name: ballDecorationAnimation;
+     }
+     
+     @keyframes ballDecorationAnimation {
+       0%,
+       50%,
+       72%,
+       80%,
+       92%,
+       100% {
+         d: path(
+           "m 963.39546,597.71943 c 21.49913,-19.30313 4.80913,-64.80408 16.71919,-83.46282 16.19467,-25.37116 67.93925,-22.92156 89.43095,-47.68524"
+         );
+       }
+       65%,
+       85% {
+         d: path(
+           "m 978.40243,581.77452 c 21.49916,-19.30313 -15.82546,-51.20401 -3.9154,-69.86275 16.19467,-25.37116 63.71847,-19.16982 85.21017,-43.9335"
+         );
+       }
+     }
+     
+     .ball-sound {
+       animation-name: ballSound;
+       visibility: hidden;
+     }
+     
+     @keyframes ballSound {
+       0%,
+       60%,
+       70%,
+       80%,
+       90%,
+       100% {
+         visibility: hidden;
+         transform: translateY(0);
+       }
+       65%,
+       67%,
+       69%,
+       85%,
+       87%,
+       89% {
+         visibility: visible;
+         transform: translateY(-3px);
+       }
+       66%,
+       68%,
+       86%,
+       88% {
+         visibility: visible;
+         transform: translateY(3px);
+       }
+     }
+     
+     .ear {
+       animation-name: moveEar;
+       transform-origin: top center;
+       transform-box: fill-box;
+     }
+     
+     @keyframes moveEar {
+       0%,
+       12%,
+       21%,
+       31%,
+       35%,
+       100% {
+         transform: rotateZ(0);
+       }
+       9%,
+       19%,
+       29% {
+         transform: rotateZ(-5deg);
+         transform: rotateZ(-10deg);
+       }
+       13%,
+       23%,
+       33% {
+         transform: rotateZ(5deg);
+         transform: rotateZ(10deg);
+       }
+     }
+     
+     .closed-eye {
+       animation-name: closeEye;
+     }
+     
+     @keyframes closeEye {
+       0%,
+       50%,
+       100% {
+         visibility: hidden;
+       }
+       10% {
+         visibility: visible;
+       }
+     }
+     
+     .lean {
+       animation-name: leanDown;
+       transform-origin: center;
+     }
+     
+     @keyframes leanDown {
+       0%,
+       50%,
+       100% {
+         transform: rotateZ(0) translateY(0);
+       }
+       60%,
+       90% {
+         transform: rotateZ(10deg) translateY(5%);
+       }
+     }
+     
+     .front-legs {
+       animation-name: flexLegs;
+     }
+     
+     @keyframes flexLegs {
+       0%,
+       50%,
+       100% {
+         transform: translateX(0);
+       }
+       60%,
+       90% {
+         transform: translateX(12%);
+       }
+     }
+     
+     .leg {
+       animation-name: rotateLegs;
+       transform-origin: bottom left;
+       transform-box: fill-box;
+       transform: translateX(16%) rotate(-10deg);
+     }
+     
+     @keyframes rotateLegs {
+       0%,
+       50%,
+       100% {
+         transform: translateX(16%) rotate(-10deg);
+       }
+       60%,
+       90% {
+         transform: translateX(35%) rotate(-83deg);
+       }
+     }
+     
+     .head {
+       animation-name: lookDown;
+       transform-origin: top right;
+       transform-box: fill-box;
+     }
+     
+     @keyframes lookDown {
+       0%,
+       55%,
+       100% {
+         transform: rotateZ(0) translate(0, 0);
+       }
+       60%,
+       90% {
+         transform: rotateZ(5deg) translate(2.5%, 6%);
+       }
+     }
+     
+     .tail {
+       animation-name: moveTail;
+       transform-origin: bottom center;
+     }
+     
+     @keyframes moveTail {
+       0%,
+       50%,
+       90%,
+       100% {
+         d: path(
+           "m 161.6285,568.63016 20.92664,-20.00034 C 151.50961,521.73829 14.092,504.432 14.092,504.432 c 0,0 128.8135,26.71916 147.5365,64.19816 z"
+         );
+       }
+       64%,
+       70%,
+       76%,
+       82% {
+         d: path(
+           "m 161.6285,568.63016 20.92664,-20.00034 C 151.50961,521.73829 77.565044,422.94078 77.565044,422.94078 c 0,0 65.340456,108.21038 84.063456,145.68938 z"
+         );
+       }
+       60%,
+       66%,
+       72%,
+       78%,
+       84% {
+         d: path(
+           "m 161.6285,568.63016 20.92664,-20.00034 C 151.50961,521.73829 14.092,504.432 14.092,504.432 c 0,0 128.8135,26.71916 147.5365,64.19816 z"
+         );
+       }
+       62%,
+       68%,
+       74%,
+       80%,
+       86% {
+         d: path(
+           "m 161.6285,568.63016 20.92664,-20.00034 C 151.50961,521.73829 159.419,390.74 159.419,390.74 c 0,0 -16.5135,140.41116 2.2095,177.89016 z"
+         );
+       }
+     }
+     
+     .tail-blur {
+       animation-name: tailBlur;
+       transform-origin: bottom center;
+     }
+     
+     @keyframes tailBlur {
+       0%,
+       59%,
+       90%,
+       100% {
+         opacity: 0;
+       }
+       64%,
+       70%,
+       76%,
+       82% {
+         transform: rotate(-2deg);
+         opacity: 0;
+       }
+       60%,
+       66%,
+       72%,
+       78%,
+       84% {
+         opacity: 0.3;
+       }
+       62%,
+       68%,
+       74%,
+       80%,
+       86% {
+         transform: rotate(2deg);
+         opacity: 0;
+       }
+     }
+     
+     .shadow {
+       animation-name: scaleShadow;
+       transform-origin: center center;
+     }
+     
+     @keyframes scaleShadow {
+       0%,
+       55%,
+       100% {
+         transform: scaleX(1) translateX(0);
+       }
+       60%,
+       90% {
+         transform: scaleX(1.1) translateX(4%);
+       }
+     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -206,4 +783,73 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+
+@media (max-width: 680px){
+  header{
+      background-size: cover;
+  }
+
+
+  .card-body{
+    width: 100%;
+  }
+
+  .card-text{      
+    text-align: justify;
+    
+  }
+
+  .h3_descuentos{
+    display: none;
+  }
+
+  .container_grid{
+    display: none;
+  }
+
+  .red-social{
+    display: none
+  }
+
+  .carrito{
+    display: none;
+  }
+
+}
+
+
+
+
+/* responsividad para tables */
+
+@media (max-width: 1158px){
+  header{
+  background-size: cover;
+  }
+
+  h1{
+      display: none;
+  }
+
+  .card-body{
+    width: 100%;
+  }
+
+  .card-text{      
+    text-align: justify;
+    
+  }
+
+
+  .container_grid{
+    display: none;
+  }
+
+
+
+  .carrito{
+    display: none;
+  }
 }
