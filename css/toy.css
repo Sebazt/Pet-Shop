@@ -140,9 +140,7 @@ main{
     height: 200px; */
     margin-bottom: 1rem;
     width: 15rem;
-    margin-left: 4em;
-    
-   
+   background: center;
    
 }
 
@@ -157,6 +155,7 @@ b {
     text-align: center;
     color: black;
 }
+
 
 .boton-carro{
     font-size: 1.5em;
@@ -785,6 +784,7 @@ footer{
     flex-direction: column;
     align-items: center;
 }
+
 
 
 

@@ -56,7 +56,7 @@ function mostrarProducto() {
         } else {
             product += `
             <div class="card">
-          <img src="${producto.imagen}" alt="">
+          <img src="${producto.imagen}" alt="" class="img-carta">
           <h3>${producto.nombre}</h3>
           <span class="ultimos-items"></span>
     

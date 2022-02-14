@@ -102,6 +102,9 @@ main{
     padding: 1rem;
 }
 
+
+
+
 .texto{
     margin: 4rem;
     font-size: 1.5em;
@@ -141,7 +144,7 @@ main{
 .card img{
     
     width: 15rem;
-   
+    background: center;
     margin-bottom: 1rem;
     align-items: center;
 }
